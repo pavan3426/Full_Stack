@@ -1,0 +1,28 @@
+Day 1 
+
+	Module-14 : Node JS 
+	
+		Agenda :
+		
+			Introduction to Node.js
+			Node Core API Basics
+			Using Buffers
+			Using Event Emitter
+			Working with Files
+			Creating and Controlling External Processes
+
+
+		Prequisites 
+		
+			HTML5 CSS3 and JavaScript / ES6
+			
+			
+			Topic : REPL
+			
+				Node JS comes With Virtual Environment Called REPL ( SHELL ). REPL [ Read Evaluate Print Loop ].
+				
+				Why REPL ?
+				
+					Its a Quick and Easy Way to Test Simple Logics Which We Have Built.
+					
+					
