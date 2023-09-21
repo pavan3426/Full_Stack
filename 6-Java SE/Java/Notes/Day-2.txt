@@ -1,0 +1,96 @@
+Day 2 
+
+	Module-6 : Java SE 
+	
+		Lesson 03 : Basic Syntax and Coding Conventions 
+		
+			What is a Comment ? 
+			
+				Comments are Non Executable Statements Which are Used For Better Understanding and Readability
+				
+			How do We Give Comments in Java ?
+			
+				a.  Single Line Comment [ // ]
+				
+				b.  Multi Line Comment  [ /*    */ ]
+				
+				c.  Documentation Comment [ 
+											/**
+				                             *
+											 *
+											 */
+										  ]
+										  
+				
+				Comments are Information Given by a Developer to End User or Another Developer making them Understand About the Class/Component
+				
+				Annotations are Information Given By a Developer to a Tool [ Compiler / Interpreter ] to Do Something.
+				
+				Annotations Always Start With @
+				
+					@Override
+					
+					Why is this Required ?
+					
+					class DbmsOperations 
+					{
+						public void connectToDB() {
+							sop("Connects to Oracle DB");
+						}
+						
+						public void executeOnDB() {
+							sop("SELECT");
+						}
+						
+						public void disconnectFromDB(){
+							sop("Disconnects From Oracle DB");
+						}
+						
+					}
+					
+					class InsertOperations extends DbmsOperations 
+					{
+						@Override
+						public void executeOnDB() {
+							sop("INSERT");
+						}
+					
+					}
+					
+					@SupressWarning
+			
+			Variable Scopes
+			
+			1.  Block Variable
+			
+					Declared within a Block of Code [ If , for ... ]
+					Availibity of Such Variables are Only Within the Block 
+			
+			2.  Method Variable
+			
+					Declared within a Method [ getCustomerDetails() ... ]
+					Availibity of Such Variables are AnyWhere Within the Method 
+			
+					
+			3.  Instance Variable
+			
+					Declared within a Class 
+					
+					They are Non Static Variables 
+					
+					Availibity of Such Variables are Within the Class and Object Context
+			
+			
+			4.  Class Variable
+					
+					Declared within a Class 
+					
+					They are Declared With Static
+					
+					Availibity of Such Variables are Throughout the Class 
+					
+					No Need of Object to Access Class Variables Becoz They are Shared Among All the Objects [ Shared Entity ]
+					
+					
+					
+				

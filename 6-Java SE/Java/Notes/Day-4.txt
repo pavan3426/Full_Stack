@@ -1,0 +1,134 @@
+Day 4 
+
+	Agenda : Java SE Programming
+	
+		Module : 6 
+		
+			Lesson 08 : Object Life Cycle and Inner Classes Cont ... 
+			
+			Lesson 09 : Exploration of Predefined Packages and Classes [ String, StringBuffer , String Builder, Wrapper Classes, Formating, Regex ]
+			
+			Lesson 10 : Reusing the Code Using Inheritance
+			
+			
+			Lesson 08 : Object Life Cycle and Inner Classes Cont ... 
+			
+				Inner Classes 
+				
+					Class Defination With in an Another Class
+					
+					Inner Classes can Defined 
+					
+					1.  With in a Class
+							
+						a. Member Level Inner Class
+						
+						b. Static Inner Class
+						
+					2.  With in a Method
+					
+						a. Local Inner Class
+						
+						b. Anonymous Inner Class 
+						
+						
+					Why ?
+					
+						To Enforce Strong Relationship Between Classes 
+						
+						[ The Existence of One Class Will Be Only With that Class ]
+						
+						class Customer 
+						{
+						
+							id 
+							name
+							phone 
+							
+							...
+							
+							class Address
+							{
+								doorNo
+								street
+								city
+								pincode
+							}
+							
+						}
+						
+						
+						class Address // Independent Class
+						{
+								doorNo
+								street
+								city
+								pincode
+						}
+						
+						class Customer
+						{
+							int id;
+							String name;
+							Address addressRef;
+							String phone;
+							
+							...
+							
+						}
+						
+						// Composition [ Has a Kind of ]
+						
+						The Existence of Address Can Be Without Customer.
+						
+			
+					What are its Characteristics ?
+					
+						a.  Inner Classes Can Access the Attributes and Operations of Outer Classes DIRECTLY [ Not Even Needing an Instance of the Outer Class ]
+						
+						b. Where as Vice Versa in Not True. Outer Class CAN'T Access the Attributes and Operations of the Inner Class Directly. If it as to Access it Should Access Via Object Reference of the Inner Class
+						
+						
+					1.  With in a Class
+							
+						a. Member Level Inner Class
+						
+							[ Assume Like Member Variable / Instance Variable / Member Function / Instance Functions ]
+						
+						b. Static Inner Class
+					
+							[ Assume Like Static Variable / Class Variable / Static Function / Class Functions ]
+							
+							
+					2.  With in a Method
+					
+						a. Local Inner Class
+						
+							Class Defined Within a Method, So the Existence of Inner Class is Only Within the Method, Beyond the Method it Can't Exist.
+						
+						b. Anonymous Inner Class 
+							
+							Class Defined As a Parameter to the Method, When You are Calling a Method, At that Moment, We Create a Class, and Life Time of the Class is Only to that Method Call.
+							
+							
+			Lesson 09 : Exploration of Predefined Packages and Classes [ String, StringBuffer , String Builder, Wrapper Classes, Formating And Regex ]
+
+				String is the Only Class Which is a User Defined Datatype But Works Like Primitive 
+				
+				int ageLimit = 21;
+				
+				String name = "Rahul"; // String name = new String("Rahul");
+				
+				
+				String Concatenation is Done 
+				
+				1.  + Operator S1 + S2;
+				
+				2.  concat Method
+				
+					s1.concat(s2);
+				
+				
+				
+							
+							

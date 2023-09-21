@@ -1,0 +1,57 @@
+Day 8 
+
+	Agenda : 
+	
+		Module-6 : Java SE 
+		
+			Lesson 16 : JDBC 
+			
+		Module-7 : Data Structures 
+		
+			Lesson01 : Introduction to DataStructures 
+			
+			
+		TMS : Case Study UI Analysis and Starting with the Implementations
+		
+		At 4:30 PM [ Java SE Presentation ( Introduction to Java )
+		
+		
+		Repeat on OOAD 
+		
+		
+		Lesson 16 : JDBC
+		
+			Why Prepared Statement ?
+			
+				
+				SELECT * FROM LINKSTABLE WHERE SEARCH = 'JAVA';
+				
+				SELECT * FROM LINKSTABLE WHERE SEARCH = 'TESTING';
+				
+				SELECT * FROM LINKSTABLE WHERE SEARCH = 'PHP';
+				
+				SELECT * FROM LINKSTABLE WHERE SEARCH = '.NET';
+				
+				SELECT * FROM LINKSTABLE WHERE SEARCH = 'C#';
+				
+				
+			Reason Behind Prepared Statement [ Performance Improvement ]
+			
+				Instead of Converting the Whole Query FROM JAVA TO SQL 
+				
+				PreparedStatement maintains a PreCompiled QUERY [ Most Part of the Query Which is Common ]
+				
+				Only the Portion of the Query Which needs to Changed can be Parameterized and Only that Can be Converted From Java to SQL 
+			
+				SELECT * FROM LINKSTABLE WHERE SEARCH = ?;
+				
+				
+				
+			Design Pattern 
+			
+				What is a Design  Pattern ?
+				
+					A Design Pattern is a Set of Guide Lines Given By One Developer to Another Developer in the S/W Industry for Recurring Problems 
+					
+				
+				

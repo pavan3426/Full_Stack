@@ -1,0 +1,134 @@
+Question 1
+a)  CLASS:
+            class is a template that contain group of attributes and methods.
+
+
+b) OBJECT :
+            object is a instance of class with some behaviour and that holds real time entity.
+
+ 
+
+c) ENCAPSULATION :
+            it is the process of wrapping data and functions into a single unit i.e provides security to data members.
+
+d) INHERITENCE : 
+             aquring properties from parent to child
+e)  POLYMORPHISM :
+               existing in different form.it contain two types
+
+Question 2
+
+Customer
+	This customer class gives the breif details of the customer line name ,phone number, id..
+Order 
+	this customer class provides the deyails of customer and also the details of the order placed by customer
+    
+		
+OrderItem
+	This class provides the details of item placed by the customer
+
+
+
+
+Question 3
+
+Customer
+
+	attributes
+		address
+		id
+		phone
+		name
+order
+	attributes
+		customer
+		id
+		items
+		orderdate
+		ordertotal
+OrderItem
+
+	attributes
+		lineNbr
+		products
+		quantity
+Company
+	contact
+	discount
+
+indiviual
+	licNumber
+Product
+	description
+	id
+	name
+	retailPrice
+HardWare
+	warrantyPeriod
+Manual
+	publisher
+Software
+	License
+
+
+
+
+Question 4
+
+
+Customer
+
+	Customer(parameter);
+	Customer();
+	getAddress();
+	getId();
+	getName();
+	getPhone();
+	setId();
+
+order
+	Order();
+	Order(para);
+	addOrderitem();
+	getId();
+	getModel();
+
+
+OrderItem
+
+	Orderitem(para);
+	getItemTotal()
+	getLineNbr()
+	getTax();
+
+Company
+	contact
+	discount
+
+indiviual
+	Individual(para);
+	getLicNumber();
+	setLicNumber();
+	toString();
+Product
+	Product();
+	getDescription();
+
+HardWare
+	Hardwar();
+	getTax();
+	getWarrantyPeriod();
+
+Manual
+	Manual(para);
+	getPublisher();
+Software
+	Software();
+	getLicense();
+
+
+Question -5
+
+
+  cutomer class inherited by individual ,company
+     product class inherited by Hardware,software,manual

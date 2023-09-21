@@ -1,0 +1,70 @@
+Day 9 
+	
+	Agenda :
+	
+		Module-6 : Java SE
+		
+			Lesson 17: Multi Threading
+			
+			Lesson 18: Date Time API
+			
+		
+		TMS : Case Study UI Analysis 
+		
+		
+		Module-7 : Data Structures 
+		
+			Lesson01 : Introduction to DataStructures 
+			
+				
+		At 4:30 PM [ Java SE Presentation ( Object Oriented Programming Principles )
+		
+		
+		Repeat on OOAD 
+		
+		
+		Lesson 17: Multi Threading
+		
+			What is a Thread ?
+			
+				A Thread is lightweight Unit of a Process 
+				
+				A Process is Divided into Chunked Tasks
+				
+				Each Chunked Task is Again Divided into Lowest and Least Unit Called as  Thread
+				
+				
+			Life Cycle Stages of Thread
+			
+			1. NEW BORN 
+			
+				Is a State where Newly Created Threads Exists 
+			
+			2. READY 
+			
+				To Bring a Thread to a Ready State [ start() ]
+				
+				Is a State Where Threads [ Multi Threads ] are Waiting for Processor to Call in. 
+			
+			3. RUNNING
+			
+				Processor Will call run(), to Intake the Thread and Give Processor Time.
+				
+				Is a State Where Thread Gets the Execution 
+			
+			4. BLOCKED
+			
+				A Thread can be Moved to Blocked State 
+				
+					sleep()
+					wait() 
+								
+			5. DEAD 
+			
+				A Thread is Killed by Calling Stop()
+			
+			
+			
+			Sychronized ( Block & Method )
+			
+				Locks 

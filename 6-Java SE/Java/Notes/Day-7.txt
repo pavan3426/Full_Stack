@@ -1,0 +1,83 @@
+Day 7 :
+
+	Module : Java SE 
+	
+		Agenda :
+		
+			Lesson 14 : Exception Handling
+			
+			Lesson 15 : Java NIO Package Exploration 
+			
+			Case Study Discussion : TMS 
+			
+			Repeat Discussion on OOAD 
+			
+			
+			Lesson 14 : Exception Handling
+			
+				What is an Exception ?
+				
+					An Exception is a Condition Which is Usually Occurred Either at Compilation Phase or Execution Phase, but Whatever may be the Case, It Leads into Abrupt Termination
+					
+					Types :
+					
+						1.  Compile Time Exception  [ Checked Exception ]
+						
+						2.  Run Time Exception [ UnChecked Exception ]
+						
+					Causes of Exception 
+					
+						1.  Invalid User Input
+						
+						2.  Design Errors
+						
+						3.  IO Errors 
+						
+						
+				Usage of Finally 
+				
+				try
+				{
+					OpenFile
+					ReadWriteContentsToFile
+				}
+				catch(ExceptionType1 E1)
+				{
+					E1.printStackTrace();
+					return;
+				}
+				catch(ExceptionType1 E1)
+				{
+					E1.printStackTrace();
+				}
+				catch(ExceptionType1 E1)
+				{
+					E1.printStackTrace();
+				}
+				finally
+				{
+					CloseFile
+				}
+				
+				
+			Try Without Resource 
+			
+				try
+				{
+					InputStream in = new FileInputStream(SomeFile);
+					...
+					
+					in.close();
+				}
+				
+			Try Without Resource 
+			
+				try ( InputStream in = new FileInputStream(SomeFile); )
+				{
+					
+					...
+					No Need to Release Resource ( Try With Resource AutoCloses ]
+					
+				}
+				
+				
