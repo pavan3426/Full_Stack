@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        article{
+            color:darkgreen;
+            font-size: 1.4em;
+        }
+        /* Multiple Selectors*/
+        h1,h3{
+            color:rgb(227, 220, 24);
+            text-transform: capitalize;
+            font-family:'Courier New', Courier, monospace;
+        }
+
+        /* child Selectors*/
+
+        nav > li {
+            color:palevioletred;
+        
+        }
+   /* Class level style start with .*/     
+        .copyright{
+            font-size: smaller;
+        }
+
+        /*Adjacent siblings*/
+        /* h1+p{
+            color: red;
+        } */
+
+        /* General siblings*/
+        h1 ~ p{
+            color:green;
+        }
+
+
+        /*Attribute Selector*/
+        input[required]{
+            background-color: lightcoral;
+        }
+
+        input[type=email]{
+            border: 2px dotted red;
+        }
+        input[type=submit]:hover{
+            cursor:grab;
+        }
+        input[type=text]:focus{
+            background-color: darksalmon;
+        }
+
+        a:active{
+            font-size: 50px;;
+        }  
+        
+        nav > p ::first-letter{
+            font-size: 250%;
+        }
+
+    </style>
+
+</head>
+<body>
+    <header>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, praesentium!</p>
+        <h1>line1</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, perferendis.</p>
+        <h1>Line 2</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto, eius?</p>
+        <h1>line3</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, perferendis.</p>
+        <h1>Line 4</h1>
+    </header>
+    <header> 
+        <h1>The Next Big Conference for Front End Developer</h1>
+        <h3>Join Us this year</h3>
+    </header>
+
+    <nav>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique repellendus harum est quae at, neque doloribus soluta quam? Velit voluptatibus cum labore doloribus ratione vitae ad qui deleniti animi, magnam, quas adipisci ipsam. Ad, soluta voluptatum earum incidunt eligendi magni!</p>
+
+        <a>
+            <li><a a href="#"> Home </a> </li>
+            <li> <a href="#"> Seakerss </a></li>
+            <li> <a href="#"> Workshops</a></li>
+            <li> <a href="#"> Submit Proposals</a></li>
+        </ul>
+       
+    </nav>
+
+    <section id ="section-1" >
+        <header>
+            <h3>Speakers</h3>
+        </header>
+        <article>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, quae minima animi quibusdam laboriosam neque illo maxime, possimus saepe cupiditate incidunt! Odit vel neque ad, voluptatem perferendis porro tempora nisi debitis, itaque corporis, quas temporibus possimus in facilis dolorem libero.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, quae minima animi quibusdam laboriosam neque illo maxime, possimus saepe cupiditate incidunt! Odit vel neque ad, voluptatem perferendis porro tempora nisi debitis, itaque corporis, quas temporibus possimus in facilis dolorem libero.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, quae minima animi quibusdam laboriosam neque illo maxime, possimus saepe cupiditate incidunt! Odit vel neque ad, voluptatem perferendis porro tempora nisi debitis, itaque corporis, quas temporibus possimus in facilis dolorem libero.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, quae minima animi quibusdam laboriosam neque illo maxime, possimus saepe cupiditate incidunt! Odit vel neque ad, voluptatem perferendis porro tempora nisi debitis, itaque corporis, quas temporibus possimus in facilis dolorem libero.
+            
+        </article>
+
+
+    </section>
+
+    
+    <section id ="section-2" class="copyright">
+        <header>
+            <h3>Work Shop</h3>
+        </header>
+        <article>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, quae minima animi quibusdam laboriosam neque illo maxime, possimus saepe cupiditate incidunt! Odit vel neque ad, voluptatem perferendis porro tempora nisi debitis, itaque corporis, quas temporibus possimus in facilis dolorem libero.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, quae minima animi quibusdam laboriosam neque illo maxime, possimus saepe cupiditate incidunt! Odit vel neque ad, voluptatem perferendis porro tempora nisi debitis, itaque corporis, quas temporibus possimus in facilis dolorem libero.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, quae minima animi quibusdam laboriosam neque illo maxime, possimus saepe cupiditate incidunt! Odit vel neque ad, voluptatem perferendis porro tempora nisi debitis, itaque corporis, quas temporibus possimus in facilis dolorem libero.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, quae minima animi quibusdam laboriosam neque illo maxime, possimus saepe cupiditate incidunt! Odit vel neque ad, voluptatem perferendis porro tempora nisi debitis, itaque corporis, quas temporibus possimus in facilis dolorem libero.
+            
+        </article>
+
+
+    </section>
+
+    
+    <section id ="section-3" >
+      <header>
+        <h3>Submit Proposals</h3>
+      </header>
+        <article>
+           
+        </article>
+    </section>
+    <article>
+            <form>
+                <table>
+                    <tr>
+                        <td>Name:</td>
+                        <td><input type="text"id="firstname" required></td>
+                    </tr>
+                    <tr>
+                        <td>Email:</td>
+                        <td><input type="email"id="email"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="submit" value="submit"></td>
+                    </tr>
+               </table>
+            </form>
+    </article>
+
+
+
+
+
+    <footer class="copyright">
+        @CopyRights Reserved 2023 IQ Gateway 
+
+
+    </footer>
+
+
+
+
+</body>
+</html>

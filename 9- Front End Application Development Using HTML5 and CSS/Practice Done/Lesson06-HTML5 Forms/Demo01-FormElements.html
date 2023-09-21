@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Elements</title>
+</head>
+<body>
+
+    <center> 
+        <h2> Registration form</h2>
+  
+
+    <form action="#" method="GET">
+
+        <table>
+            <tr>
+                <td> <label for="FirstName"> First Name : </label></td>
+                  <td>  <input type="text" name="firstName" id="firstName" maxlength="25"></input> </td>
+            </tr>
+
+            <tr>
+                <td> <label for="LastName"> Last Name : </label></td>
+                  <td>  <input type="text" name="lastName" id="lastName" value="Pavan Kumar Naidu " readonly></input> </td>
+            </tr>
+
+            <tr>
+                <td> <label for="password"> Password : </label></td>
+                  <td>  <input type="password" name="pwd" id="pwd"></input> </td>
+            </tr>
+
+            <tr>
+                <td> <input type="radio" name="gender" id="male" >
+                    <label for="male" > Male </label></td>
+
+                <td> <input type="radio" name="gender" id="female" >
+                     <label for="female" > Female </label></td>
+            </tr>
+
+            <tr>
+                <td>Soprt's You Like </td>
+                
+                <td> <input type="checkbox" name="sports" id="cricket" >
+                    <label for="cricket" > Cricket</label><br>
+
+                     <input type="checkbox" name="sports" id="soccer" >
+                     <label for="soccer" > Soccer </label><br>
+                    
+                    <input type="checkbox" name="sports" id="kabadi" >
+                     <label for="kabadi" > Kabadi </label><br>
+                    
+                     <input type="checkbox" name="sports" id="hockey" >
+                     <label for="hockey" > Hockey </label></td>
+                               
+            </tr>
+
+            <tr>
+                <td><label for="profilepic" > Profile Pic : </label></td>
+                <td> <input type=file name="profilepic" id="profilepic" accept=".jpg" ></td>
+            </tr>
+            <tr>
+                <td><label for="city" > City : </label></td>
+                <td> <select name="city" id="city">
+                    <option value="Choose the city">--Choose the city--</option>
+                    <option value="Benagaluru">Bengaluru</option>
+                    <option value="Chennai">Chennai</option>
+                    <option value="Trivendrum">Trivendrum</option>
+                    <option value="Hyderbad">Hyderabad</option>
+                    <option value="Vishakapatnam">Vishakapatnam</option>
+                    <option value="Kochi">Kochi</option>
+                    <option value="coimbatore">coimbatore</option>
+
+
+
+                </td>
+            </tr>
+
+            <tr>
+                <td><label for="email ">Email :</label></td>
+                <td> <input type="email" name="email" id="email" placeholder="boyapatipavan@gmail.com"></td>
+            
+            </tr>
+
+            <tr>
+                <td> <label for="telephone"> Telephone : </label></td>
+                  <td>  <input type="tel" name="telephone" id="telephone"></input> </td>
+            </tr>
+
+            <tr>
+                <td> <label for="abstract"> abstract : </label></td>
+                <td>  <textarea id="abstract" name="abstract" rows="5" cols="70"></textarea> </td>
+        
+            </tr>
+
+            <tr>
+                <td> <label for="favPlace"> Favourite Place</label></td>
+                <td> <input type="text" name="favPlace" id="favPlace" list="suggestions">
+                    <datalist id="suggestions" >
+                        <option value ="Bengaluru"></option>
+                        <option value ="Hyderabad"></option>
+                    </datalist>
+                </td>
+            </tr>
+
+            <tr>
+                <td> <label for="favColor"> Favourite Color : </label></td>
+                  <td>  <input type="color" name="favColor" id="favColor" value="#FF00FF"></input> </td>
+            </tr>
+
+            <tr>
+                <td> <label for="dateOfBirth"> DOB : </label></td>
+                  <td>  <input type="date" name="dateOfBirth" id="dateOfBirth" value="1999-01-26"></input> </td>
+            </tr>
+
+            <tr>
+                <td> <label for="meetDateTime"> Meeting At : </label></td>
+                  <td>  <input type="datetime-local" name="meetDateTime" id="meetDateTime" ></input> </td>
+            </tr>
+            <tr>
+                <td> <label for="selectMonth"> Select Month : </label></td>
+                  <td>  <input type="month" name="selectMonth" id="selectMonth" ></input> </td>
+            </tr>
+
+            <tr>
+                <td> <label for="makeChoose"> Slide Pls : </label></td>
+                  <td>  <input type="range" name="makeChoose" id="makeChoose" ></input> </td>
+            </tr>
+            
+            <tr>
+                <td> <label for="numberChoose"> Choose Number value : </label></td>
+                  <td>  <input type="number" name="numberChoose" id="numberChoose" min="1" max="10" step="0.25" ></input> </td>
+            </tr>
+
+            <tr>
+                <td> <label for="selectBirthTime"> Select Birth Time : </label></td>
+                  <td>  <input type="time" name="selectBirthTime" id="selectBirthTime" ></input> </td>
+            </tr>
+
+            <tr>
+                <td> <label for="webSiteURL"> Provide URL  : </label></td>
+                  <td>  <input type="url" name="webSiteURL" id="webSiteURL" ></input> </td>
+            </tr>
+
+            <tr>
+
+                <td> <input type="reset" value =reset>
+                </td>
+                <td><input type="submit" value =submit>
+                </td>
+            </tr>
+
+
+        </table>
+       
+
+    </form>
+</center>
+    
+</body>
+</html>
