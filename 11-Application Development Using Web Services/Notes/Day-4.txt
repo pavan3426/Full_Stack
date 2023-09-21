@@ -1,0 +1,87 @@
+Day 4 :
+
+	Agenda :
+	
+		Module 11 : Application Development Using WebServices [ SOAP and REST ]
+		
+			Lesson 08 : Bottom Up Approach
+			
+			Lesson 09 : Top Down Approach 
+			
+			Lesson 10 : Implementing JAX RS Web Services 
+			
+			
+			
+			Lesson 08 : Bottom Up Approach JAX WS 
+			
+				SOAP Based WS Can Be Built in 
+				
+				1.  Bottom Up Approach
+				
+				2.  Top Down Approach 
+							
+				This is one of the Way to Create a SOAP Based WS 
+				
+					Bottom Up Approach Indicates
+					
+						1. Business Logic Defined First [ In Our Case its in Java ]
+						
+						2. Generate WSDL [ Auto Generated ]
+						
+						3. Construct Client App [ UI also JAXB Classes ]
+						
+					Top Down Approach Indicates
+						
+						1. We Will Generate WSDL [ Created By Developer ]
+						
+						2. Business Logic Defined Based on WSDL [ In Our Case its in Java ] 
+							
+							Skeleton for the Application is Generated, Developer Needs to Add the Logic 
+						
+						3. Construct Client App [ UI also JAXB Classes ]
+				
+						
+						
+				Lesson 09 : Top Down Approach 
+						
+					
+					A WSDL [ Web Service Description Language ]
+						
+						
+						<types>: Defines the data types used by the Web service
+						
+						<message>: Describes the messages used by the Web service; defines the data elements of an operation
+												
+						
+						<portType>: Describes a Web service, the operations that can be performed, and 	the messages that are involved
+						
+						
+						<binding>: Defines the communication protocols used by the Web service
+						
+						
+						<service>: Describes the name and location of the Web service and the context with which it can be accessed
+						
+						
+				Lesson 10 : Implementing JAX RS Web Services 
+				
+					A Restful WS Application is Composed of Collection of Resources 
+					
+						Each Resource is a Business Class [ Entity ] Containing Business Operations Marked With HTTP Annotations on it.
+						
+					
+					A RESTFul Application [ Banking ]
+					
+						Collection of Resources 
+						
+							CustomerResource  ---- Business Operations Associated With Customer
+							
+							AccountResource  ---- Business Operations Associated With Account
+							
+							TransactionResource  ---- Business Operations Associated With Transaction
+							
+							...
+							
+							
+							
+						
+						
