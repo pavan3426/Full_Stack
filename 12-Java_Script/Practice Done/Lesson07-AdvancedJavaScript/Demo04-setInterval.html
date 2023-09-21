@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2> The Current Date and Time is : - 
+    <span id="clock"></span>
+        </h2>
+
+    <!-- <button onclick="setTimeout(delayInExecution,5000 )" >Click Here</button> -->
+    <script type="text/javascript">
+        function showTime(){
+            var sysDate = new Date();
+            document.getElementById("clock").innerHTML = sysDate.toLocaleTimeString();
+
+            // document.write("<h3>Welcome to JS TimeOut Functionality....</h3>")
+        }
+        setInterval(showTime,1000);
+
+    </script>
+
+</body>
+</html>

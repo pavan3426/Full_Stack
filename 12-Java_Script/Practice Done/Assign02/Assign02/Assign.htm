@@ -1,0 +1,138 @@
+
+<!DOCTYPE html> 
+<html> 
+<head> 
+<meta charset=utf-8 /> 
+<title>JS DOM paragraph style</title> 
+<script>
+    function js_style(){
+        var par=document.getElementById("text");
+        par.style.fontFamily = "Arial";
+  par.style.fontSize = "20px";
+  par.style.color = "red";
+    }
+</script>
+</head> 
+<body> 
+<p id='text'>JavaScript Exercises- W3 Resources </p> 
+<div> 
+<button id="jsstyle" onclick="js_style()">Style</button> 
+</div> 
+</body> 
+</html> 
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Return first and last name from a form - w3resource</title>
+</head>
+<body>
+<form id="form1" onsubmit="getFormValue()">
+First name: <input type="text" name="fname" value="David"><br>
+Last name: <input type="text" name="Lname" value="Becham"><br>
+<input type="submit" value="Submit">
+</form>
+
+<script>
+function getFormValue() {
+ 
+  var inputs = document.getElementsByTagName("input");
+
+  
+  for (var i = 0; i < inputs.length; i++) {
+    var input = inputs[i];
+
+   
+    if (input.name === "fname") {
+      var firstName = input.value;
+      alert("First name: " + firstName);
+    } else if (input.name === "Lname") {
+      var lastName = input.value;
+      alert("Last name: " + lastName);
+    }
+  }
+
+ 
+}
+</script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Remove items from a dropdown list</title>
+</head>
+<body>
+<form>
+<select id="colorSelect">
+<option>Red</option>
+<option>Green</option>
+<option>White</option>
+<option>Black</option>
+</select>
+<input type="button" onclick="removeColor()" value="Select and Remove">
+</form>
+
+<script>
+
+</script>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Remove items from a dropdown list</title>
+</head>
+<body>
+<form>
+<select id="colorSelect">
+<option>Red</option>
+<option>Green</option>
+<option>White</option>
+<option>Black</option>
+</select>
+<input type="button" onclick="removeColor()" value="Select and Remove">
+</form>
+
+<script>
+function removeColor() {
+  var selectElement = document.getElementById("colorSelect");
+  var selectedIndex = selectElement.selectedIndex;
+
+  if (selectedIndex >= 0) {
+    selectElement.options[selectedIndex].remove();
+  }
+}
+</script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Highlight Bold Words on Mouseover</title>
+</head>
+<body>
+<p id="paragraph">This is a <b>sample</b> paragraph with <b>bold</b> words.</p>
+<a href="#" onmouseover="highlightBold()">Hover here to highlight bold words</a>
+
+<script>
+function highlightBold() {
+  var boldElements = document.getElementById("paragraph").getElementsByTagName("b");
+
+  for (var i = 0; i < boldElements.length; i++) {
+    boldElements[i].style.backgroundColor = "yellow";
+  }
+}
+</script>
+</body>
+</html>
+
