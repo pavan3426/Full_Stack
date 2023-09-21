@@ -1,0 +1,12 @@
+Day 19 : 
+
+	Module 8: Java Design Patterns 
+		
+			Lesson 01 : Introduction to Design Patterns 
+			
+			
+			What is a Design Pattern ? 
+			
+				A Design Pattern is a Set of Guide Lines Given By One Developer to Another Developer in the Software Industry for Recurring Problems 
+				
+			
