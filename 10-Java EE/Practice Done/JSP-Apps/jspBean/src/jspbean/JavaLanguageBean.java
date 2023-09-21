@@ -1,0 +1,53 @@
+package jspbean;
+
+public class JavaLanguageBean {
+    private String name;
+            private String language;
+
+            public JavaLanguageBean()
+            {
+
+            }
+            
+            public void setName(String name)
+            {
+                    this.name=name;
+            }
+
+            public String getName()
+            {
+                    return name;
+            }
+
+            public void setLanguage(String language)
+            {
+                    this.language=language;
+            }
+
+            public String getLanguage()
+            {
+                    return language;
+            }
+
+            public String getLanguageComments()
+            {
+                    if(language.equals("Java"))
+                    {
+                            return " The King of OO Language ";
+                    }
+                    else if(language.equals("C++"))
+                    {
+                            return " Rather TOO Complex but Called as OO Language ";
+                    }
+                    else if(language.equals("Perl"))
+                    {
+                            return " Ok if you like incomprehensible Code.";
+                    }
+                    else
+                    {
+                            return "sorry I Have never heard of this Language....";
+                    }
+            }
+    }
+
+    

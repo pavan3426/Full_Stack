@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='windows-1252'?>
+<jsp:root xmlns:jsp="http://java.sun.com/JSP/Page" version="2.1"
+          xmlns:f="http://java.sun.com/jsf/core"
+          xmlns:h="http://java.sun.com/jsf/html"
+          xmlns:af="http://xmlns.oracle.com/adf/faces/rich">
+  <jsp:directive.page contentType="text/html;charset=windows-1252"/>
+  <f:view>
+    <af:document id="d1">
+      <af:form id="f1">
+        <af:panelHeader text="Add Product"
+                        binding="#{productBrowsingBean.ph1}" id="ph1"
+                        inlineStyle="width:366px; height:286px;">
+          <f:facet name="context"/>
+          <f:facet name="menuBar"/>
+          <f:facet name="toolbar"/>
+          <f:facet name="legend"/>
+          <f:facet name="info"/>
+          <af:panelFormLayout binding="#{productBrowsingBean.pfl1}" id="pfl1">
+            <f:facet name="footer">
+              <af:commandToolbarButton text="Save"
+                                       binding="#{productBrowsingBean.addProduct}"
+                                       id="addProduct"
+                                       action="#{productBrowsingBean.addProduct}"/>
+            </f:facet>
+            <af:inputText label="Name" binding="#{productBrowsingBean.it1}"
+                          id="it1">
+              <p>
+                 
+              </p>
+              <p>
+                <af:inputText label="Label 1"
+                              binding="#{productBrowsingBean.it2}" id="it2"/>
+              </p>
+            </af:inputText>
+            <af:inputText label="Description" binding="#{productBrowsingBean.it3}"
+                          id="it3"/>
+            <af:inputText label="Additional Information"
+                          binding="#{productBrowsingBean.it4}" id="it4"/>
+            <af:inputText label="List Price" binding="#{productBrowsingBean.it5}"
+                          id="it5"/>
+            <af:inputText label="Minimum Price" binding="#{productBrowsingBean.it6}"
+                          id="it6"/>
+            <af:inputText label="Cost Price" binding="#{productBrowsingBean.it7}"
+                          id="it7"/>
+          </af:panelFormLayout>
+        </af:panelHeader>
+      </af:form>
+    </af:document>
+  </f:view>
+  <!--oracle-jdev-comment:auto-binding-backing-bean-name:productBrowsingBean-->
+  
+</jsp:root>

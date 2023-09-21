@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<faces-config version="1.2" xmlns="http://java.sun.com/xml/ns/javaee">
+    <managed-bean>
+    <managed-bean-name> lbRef</managed-bean-name>
+    <managed-bean-class>training.iqgateway.view.LoginBean</managed-bean-class>
+    <managed-bean-scope>session</managed-bean-scope>
+    </managed-bean>
+    
+    <navigation-rule>
+        <from-view-id> index.jsp </from-view-id>
+        
+        <navigation-case>
+            <from-outcome> success </from-outcome>
+            <to-view-id> Welcome.jsp </to-view-id>    
+        </navigation-case>
+        <navigation-case>
+            <from-outcome>failure</from-outcome>
+            <to-view-id>/error</to-view-id>
+        </navigation-case>
+    </navigation-rule>
+    <managed-bean>
+        <managed-bean-name>backing_erroe</managed-bean-name>
+        <managed-bean-class>training.iqgateway.view.backing.Erroe</managed-bean-class>
+        <managed-bean-scope>request</managed-bean-scope>
+        <!--oracle-jdev-comment:managed-bean-jsp-link:1erroe.jspx-->
+    </managed-bean>
+</faces-config>

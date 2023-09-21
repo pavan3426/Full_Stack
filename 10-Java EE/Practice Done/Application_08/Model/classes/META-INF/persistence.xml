@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_1_0.xsd"
+             version="1.0">
+  <persistence-unit name="FOD">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <jta-data-source>java:/app/jdbc/jdbc/FODDS</jta-data-source>
+    <class>training.iqgateway.oracle.model.Category</class>
+    <class>training.iqgateway.oracle.model.Products</class>
+    <properties>
+      <property name="eclipselink.target-server" value="WebLogic_10"/>
+      <property name="javax.persistence.jdbc.driver"
+                value="oracle.jdbc.OracleDriver"/>
+      <property name="javax.persistence.jdbc.password"
+                value="496BE18DA2675DD389D0C5C0F8656722"/>
+      <property name="javax.persistence.jdbc.url"
+                value="jdbc:oracle:thin:@localhost:1521:XE"/>
+      <property name="javax.persistence.jdbc.user" value="FOD"/>
+      <property name="javax.persistence.jtaDataSource"
+                value="java:/app/jdbc/jdbc/FODDS"/>
+    </properties>
+  </persistence-unit>
+</persistence>

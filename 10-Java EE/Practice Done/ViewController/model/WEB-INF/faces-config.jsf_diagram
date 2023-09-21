@@ -1,0 +1,62 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<SDM>
+   <OverallProperties
+      id="OverallProperties1"/>
+   <Page
+      id="Page2">
+      <property
+         name="wildcard">false</property>
+      <property
+         name="y">-19.051758</property>
+      <property
+         name="x">141.0</property>
+      <property
+         name="jspName">index.jsp</property>
+   </Page>
+   <Page
+      id="Page34">
+      <property
+         name="wildcard">false</property>
+      <property
+         name="y">-49.350586</property>
+      <property
+         name="x">-88.0</property>
+      <property
+         name="jspName">Welcome.jsp</property>
+   </Page>
+   <NavigationCase
+      islink="true"
+      id="NavigationCase36"
+      from="Page2"
+      to="Page34">
+      <property
+         name="fromOutcome">success</property>
+      <property
+         name="description">Navigation Case</property>
+      <property
+         name="sdm:polyPoints">L46,100.0,-22.902344,-47.0,-49.70117,R50</property>
+   </NavigationCase>
+   <Page
+      id="Page8">
+      <property
+         name="wildcard">false</property>
+      <property
+         name="y">113.19531</property>
+      <property
+         name="x">-91.0</property>
+      <property
+         name="jspName">/error</property>
+   </Page>
+   <NavigationCase
+      islink="true"
+      id="NavigationCase10"
+      from="Page2"
+      to="Page8">
+      <property
+         name="fromOutcome">failure</property>
+      <property
+         name="description">Navigation Case</property>
+      <property
+         name="sdm:polyPoints">L54,100.0,-15.902344,-50.0,112.84473,R50</property>
+   </NavigationCase>
+</SDM>

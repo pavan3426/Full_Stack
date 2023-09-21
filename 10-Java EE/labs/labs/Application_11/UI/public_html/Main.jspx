@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='windows-1252'?>
+<jsp:root xmlns:jsp="http://java.sun.com/JSP/Page" version="2.1"
+          xmlns:f="http://java.sun.com/jsf/core"
+          xmlns:h="http://java.sun.com/jsf/html"
+          xmlns:af="http://xmlns.oracle.com/adf/faces/rich">
+  <jsp:directive.page contentType="text/html;charset=windows-1252"/>
+  <f:view>
+    <af:document id="d1" binding="#{productBrowsingBean.d1}">
+      <af:form id="f1" binding="#{productBrowsingBean.f1}">
+        <af:tree id="categoryTree" value="#{productBrowsingBean.treeModel}"
+                 var="Category" binding="#{productBrowsingBean.categoryTree}">
+          <f:facet name="contextMenu">
+            <af:group binding="#{productBrowsingBean.g1}" id="g1">
+              <af:outputText value="#{category.categoryName}"
+                             binding="#{productBrowsingBean.ot1}" id="ot1"/>
+              <af:panelSplitter binding="#{productBrowsingBean.ps2}" id="ps2"
+                                splitterPosition="120"
+                                inlineStyle="width:100%;">
+                <f:facet name="first"/>
+                <f:facet name="second"/>
+              </af:panelSplitter>
+            </af:group>
+          </f:facet>
+        </af:tree>
+        <af:activeOutputText value="#{category.categoryName}"
+                             binding="#{productBrowsingBean.aot1}" id="aot1"/>
+        <af:panelSplitter binding="#{productBrowsingBean.ps1}" id="ps1"
+                          splitterPosition="120" inlineStyle="width:100.0%;">
+          <f:facet name="first"/>
+          <f:facet name="second"/>
+        </af:panelSplitter>
+      </af:form>
+    </af:document>
+  </f:view>
+  <!--oracle-jdev-comment:auto-binding-backing-bean-name:productBrowsingBean-->
+</jsp:root>
