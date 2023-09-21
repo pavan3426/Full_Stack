@@ -1,0 +1,79 @@
+Day 2 :
+
+	Module 11 : Application Development Using Web Services [ SOAP and REST ]
+	
+		Lesson 02 : XML Document Structure
+		
+		Lesson 03 : XML Parsing using JAXB
+		
+		Lesson 04 : SOAP Web Services Overview 
+		
+		
+			Lesson 02 : XML Document Structure
+			
+				XML is Meant of Describing Data [ What Data to Provide ]
+				
+				Processing 
+				
+					XSLT [ eXtensible Stylesheet Language Transformation ]
+					
+					XSL FO [ eXtensible Stylesheet Language Formating Objects ]
+		
+				Search 
+				
+					XPath 
+					
+				Communication With Database
+				
+					XSQL Framework [ Transformation of Data From Database into XML Documents ]
+					
+					
+				XML Structuring Can Be Done 
+				
+				1.  DTD [ Document Type Defination ] ( Text Based )
+				
+				2.  XML Schema ( XML Based ) 
+				
+						Structure Validation 
+						
+						Data Validation 
+		
+		
+			Lesson 03 : XML Parsing using JAXB
+			
+				JAXB [ Java API For XML Binding ]
+				
+				Why ?
+				
+					To and Fro Conversion From Java to XML and XML to Java 
+					
+					
+				Lesson 04 : SOAP Web Services Overview 
+				
+					Webservices 
+					
+						a.  SOAP Based
+						
+						b.  REST Based 
+						
+				
+						Meant For Defining Business Logic of the Application 
+						
+						
+						A WSDL [ Web Service Description Language ]
+						
+						
+						<types>: Defines the data types used by the Web service
+						
+						<message>: Describes the messages used by the Web service; defines the data elements of an operation
+												
+						
+						<portType>: Describes a Web service, the operations that can be performed, and 	the messages that are involved
+						
+						
+						<binding>: Defines the communication protocols used by the Web service
+						
+						
+						<service>: Describes the name and location of the Web service and the context with which it can be accessed
+
+						

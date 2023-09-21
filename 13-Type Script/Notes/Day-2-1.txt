@@ -1,0 +1,110 @@
+Day 2 
+
+	Agenda
+	
+		Module-13 : TypeScript
+		
+			Lesson 05 : Functions
+			
+			Lesson 06 : Classes and Objects
+			
+			Lesson 07 : Interfaces and Generics
+			
+			Lesson 08 : Modules 
+			
+			
+			Lesson 05 : Functions
+			
+				What is a Function ?
+				
+					A Function is a Set of Instruction to Execute a Task. Making it Reusable 
+			
+				
+				Basics Types 
+				
+					1.  Function With a Name
+					
+					2.  Function Without a Name ( Anonymous )
+					
+					
+				OOP Context 
+				
+					Function Overloading 
+					
+						Two or More Metohds in a Class Sharing Same name Differed With their Parameters 
+						
+			
+			Lesson 07 : Interfaces and Generics
+			
+				In TypeScript 
+				
+					Interfaces do Contain Dual Nature 
+					
+						1. Same As Found in Other Programming Languages
+						
+						2. Interfaces in Typescript Will Act Like Structures in C 
+						
+						
+					Generics 
+					
+						Generics is used for TypeSafety
+						
+							Move Runtime Errors to Compile Errors
+							
+							Array<number>
+							
+							
+							
+			Lesson 07 : Modules and Namespaces
+			
+				What is a Module ? [ Global ]
+				
+					A Module is TS/JS File, Which Contains Variables, Methods, Or Full Fledged Class.
+					
+					Making This Available to Who is in Need of it.
+					
+					
+					ES6 or TypeScript Provides a Solution to this Problem [ Modules and Namespaces ]. So that it Can Released as a Lib and Used Else Where .
+					
+					With a Simple Syntax
+					
+						import 
+						
+						export 
+						
+						
+				What is a Namespaces ? [ Local ]
+				
+					A Namespace is TS/JS File, Which Contains Variables, Methods, Or Full Fledged Class.
+					
+					Making This Available to Who is in Need of it [ But Within the File Itself ].
+					
+					
+					ES6 or TypeScript Provides a Solution to this Problem [ Modules and Namespaces ]. So that it Can Released as a Lib and Used Else Where .
+					
+					With a Simple Syntax
+					 
+						
+						export 
+						
+						namespace UtilityFunctions {
+						
+							export charAt(index: number): string {
+								...
+							}
+							
+							export concat(stringVal1: string, StringVal2: string): string {
+								...
+							}
+							
+						}
+						
+						
+						class Employee {
+						
+							Attributes
+							
+							Operations
+							
+								UtilityFunctions.charAt(2);
+								
